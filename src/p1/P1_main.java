@@ -2,37 +2,9 @@ package p1;
 
 public class P1_main {
 	
-public static void man (String[] args) {
+public static void main (String[] args) {
 		
-		int stockwerk = 2;
-		
-		switch(stockwerk) {
-
-		case -1:
-			System.out.print("Parkhaus");
-			break;
-			
-		case 0:
-			System.out.print("Angebote");
-			break;
-			
-		case 1:
-			System.out.print("Damenbekleidung");
-			break;
-			
-		case 2:
-			System.out.print("Herrenbekleidung");
-			break;
-			
-		case 3:
-			System.out.print("Kinderbekleidung");
-			break;
-			
-		default:
-			System.out.print("unbekannt");
-			break;
-			
-		}
+		int stockwerk = -10;
 		
 		switch(stockwerk) {
 
@@ -42,7 +14,35 @@ public static void man (String[] args) {
 			
 		case 0:
 			System.out.println("Angebote");
+			break;
 			
+		case 1:
+			System.out.println("Damenbekleidung");
+			break;
+			
+		case 2:
+			System.out.println("Herrenbekleidung");
+			break;
+			
+		case 3:
+			System.out.println("Kinderbekleidung");
+			break;
+			
+		default:
+			System.out.println("unbekannt");
+			break;
+			
+		}
+		
+		/*
+		switch(stockwerk) {
+
+		case -1:
+			System.out.println("Parkhaus");
+			break;
+			
+		case 0:
+			System.out.println("Angebote");
 			
 		case 1:
 			System.out.println("Damenbekleidung");
@@ -52,12 +52,14 @@ public static void man (String[] args) {
 			
 		case 3:
 			System.out.println("Kinderbekleidung");
+			break;
 			
 		default:
 			System.out.println("unbekannt");
 			break;
 			
 		}
+		*/
 		
 	}
 

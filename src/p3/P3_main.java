@@ -2,66 +2,50 @@ package p3;
 
 public class P3_main {
 	
-public static void man (String[] args) {
+public static void main (String[] args) {
 		
-		int stockwerk = 0;
+		boolean x = false;
+		boolean y = false;
 		
-		switch(stockwerk) {
-
-		case -1:
-			System.out.print("Parkhaus");
-			break;
+		boolean wertA;
+		boolean wertB;
+		boolean wertC;
+		boolean wertD;
+		
+		wertA = false;
+		wertB = false;
+		wertC = false;
+		wertD = false;
+		
+		if (!(x!=y && x==y)) {
 			
-		case 0:
-			System.out.print("Angebote");
-			break;
-			
-		case 1:
-			System.out.print("Damenbekleidung");
-			break;
-			
-		case 2:
-			System.out.print("Herrenbekleidung");
-			break;
-			
-		case 3:
-			System.out.print("Kinderbekleidung");
-			break;
-			
-		default:
-			System.out.print("unbekannt");
-			break;
+			wertA = true;
 			
 		}
 		
-		switch(stockwerk) {
-
-		case -1:
-			System.out.print("Parkhaus");
-			break;
+		if (x || true) {
 			
-		case 0:
-			System.out.print("Angebote");
-			
-			
-		case 1:
-			System.out.print("Damenbekleidung");
-			break;
-			
-		case 2:
-			System.out.print("Herrenbekleidung");
-			break;
-			
-		case 3:
-			System.out.print("Kinderbekleidung");
-			break;
-			
-		default:
-			System.out.print("unbekannt");
-			break;
+			wertB = true;
 			
 		}
 		
+		if (x && false) {
+			
+			wertC = true;
+			
+		}
+		
+		if ((x&&!y)||(!x)) {
+			
+			wertD = true;
+			
+		}
+		
+		System.out.println("Aussage (a) ist: " + wertA);
+		System.out.println("Aussage (b) ist: " + wertB);
+		System.out.println("Aussage (c) ist: " + wertC);
+		System.out.print("Aussage (d) ist: " + wertD);
+	
 	}
 
 }
